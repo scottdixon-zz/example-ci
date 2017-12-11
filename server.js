@@ -9,4 +9,4 @@ app.get('/api/dogs', (req, res) => res.send(dogs))
 app.get('/api/owners', (req, res) => res.send(owners))
 
 
-app.listen(3001, () => console.log('Example app listening on port 3000!'))
+app.listen(process.env.PORT || 3000, () => console.log('Example app listening on port 3000!'))
